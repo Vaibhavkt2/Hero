@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<input type="text" #box (keyup)="onSave(box.value)" placeholder="Enter Name" name="name" /> 
+<p>Box Value:: {{display}}</p>  
+
+<button (click)="counter('minus')" >--</button>
+<p>count:: {{count}}</p>
+<button (click)="counter('add')" >++</button>
+
+<nav>
+    <a routerLink="/dashboard">DASHBOARD</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-message></app-message>
+<!-- <app-hero></app-hero> -->
+
+

@@ -22,5 +22,23 @@ export class HeroService {
     return of(hero);
   }
 
+  // addHero(hero: Hero): Observable<Hero> {
+
+  //   return this.http.post<hero>(this.heroesURL, hero, this.httpOptions).pipe(
+  //     tap((newHero: Hero) => this.log('addes hero w/ id = ${newHero.id'} )),
+  //     catchError(this.handleError<Hero>('addHero'))
+  //   );
+  // }
+
+  // deleteHero(id: number): Observable<Hero>{
+  //   const url = '${this.heroesURL}/${id}';
+
+  //   return this.http.delete<Hero>(url, this.httpOptions).pipe(
+  //     tap(_ => this.log('deleted hero id${id}')),
+  //     catchError(this.handleError<Hero>('deleteHero'))
+
+  //   );
+  // }
+
   constructor(private messageService: MessageService) { }
 }
